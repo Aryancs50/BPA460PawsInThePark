@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f4f6f1;
+  color: #2f3e34;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background-color: #17c0e7;
+  box-shadow: 0 2px 10px #0000001a;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #2f6b4f;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #f4a261;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #8fcce3, #6fa87a);
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.primary-btn {
+  background-color: #f4a261;
+  color: #ffffff;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 24px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #e38b4f;
+}
+
+.products,
+.about {
+  padding: 60px 40px;
+  background-color: #f4f6f1;
+}
+
+.products h2,
+.about h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #2f6b4f;
+}
+
+.product-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.product-card {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 6px 14px #00000014;
+}
+
+.product-card img {
+  width: 100%; /* full width of card */
+  height: auto; /* maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 8px; /* slightly rounded corners */
+  margin-bottom: 16px;
+}
+
+footer {
+  background-color: #2f6b4f;
+  color: #ffffff;
+  padding: 24px;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #dfeee5;
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #f4a261;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  nav {
+    margin-top: 12px;
+  }
+
+  nav a {
+    margin: 0 12px;
+    display: inline-block;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .products,
+  .about {
+    padding: 40px 20px;
+  }
+
+  .product-card {
+    width: 95%;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .primary-btn {
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
